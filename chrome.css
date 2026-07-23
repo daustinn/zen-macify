@@ -3,7 +3,7 @@
         --macify-rounded-small: 7px;
         --macify-rounded-medium: 12px;
         --macify-rounded-large: 19px;
-        --macify-min-height: 38px;
+        --macify-min-height: 40px;
     }
 
     .tabbrowser-tab[pending="true"] {
