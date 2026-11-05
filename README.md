@@ -4,6 +4,26 @@ A CSS mod for Zen Browser (Windows) that unifies border-radius, tab/toolbar heig
 
 ![Zen Macify](/assets/zen-macify.webp)
 
+## Quick Installation
+
+Run this command in PowerShell to automatically detect your Zen Browser profile and append or update the mod in your `zen-themes.css`:
+
+```powershell
+irm https://raw.githubusercontent.com/daustinn/zen-macify/main/install.ps1 | iex
+```
+
+Or from the cloned repository:
+
+```powershell
+.\install.ps1
+```
+
+For Bash:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/daustinn/zen-macify/main/install.sh | bash
+```
+
 ## Manual Installation
 
 > **Note:** The official [Zen Theme Store](https://github.com/zen-browser/theme-store) has been discontinued, so this mod must be applied manually.
