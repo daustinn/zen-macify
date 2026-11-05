@@ -7,12 +7,32 @@
         }
     }
 
-    :root {
-        --macify-min-height: 40px;
+    :root:not([inDOMFullscreen="true"]):not([popup-window]) {
+        & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+            :root:not([zen-no-padding="true"]) &:not(.zen-glance-overlay) {
+                border-radius: 15px !important;
+            }
+        }
     }
 
     .tabbrowser-tab[pending="true"] {
         filter: grayscale(1);
         opacity: 0.7;
+    }
+
+    .zen-media-card {
+        background-color: color-mix(
+            in srgb,
+            var(--zen-sidebar-notification-bg) 90%,
+            transparent
+        );
+        padding: 5px 6px !important;
+    }
+
+    #urlbar[breakout-extend] {
+        &,
+        & .urlbar-background {
+            border-radius: 28px !important;
+        }
     }
 }
